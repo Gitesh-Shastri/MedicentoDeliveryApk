@@ -6,6 +6,207 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.CurrentJobFragment">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick Up Details"
+                android:id="@+id/pickUp"
+                android:layout_marginTop="10dp"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/pickUptextView2"
+                style="@style/Base.TextAppearance.AppCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pickUp"
+                android:layout_marginBottom="8dp"
+                android:text="Distance to pickup point: "
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/pickUpdistance_value"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="22km"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pickUp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/pickUptextView3"
+                style="@style/Base.TextAppearance.AppCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Estimated time: "
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@id/pickUptextView2"
+                />
+
+            <TextView
+                android:id="@+id/pickUpestimated_time_value"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="9 hrs"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pickUptextView2"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/pickUptextContact"
+                style="@style/Base.TextAppearance.AppCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Contact"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@id/pickUptextView3"
+                />
+
+            <TextView
+                android:id="@+id/pickUpContact"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="9999454334"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pickUptextView3"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/pickUpContact"
+                android:layout_marginTop="2dp"
+                android:id="@+id/view"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Up Details"
+                android:id="@+id/delivery"
+                android:layout_below="@id/view"
+                android:layout_marginTop="10dp"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/deliverytextView2"
+                style="@style/Base.TextAppearance.AppCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/delivery"
+                android:layout_marginBottom="8dp"
+                android:text="Distance to delivery point: "
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/deliverydistance_value"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="22km"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/delivery"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/deliverytextView3"
+                style="@style/Base.TextAppearance.AppCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Estimated time: "
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@id/deliverytextView2"
+                />
+
+            <TextView
+                android:id="@+id/deliveryestimated_time_value"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="9 hrs"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/deliverytextView2"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/deliverytextContact"
+                style="@style/Base.TextAppearance.AppCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Contact"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@id/deliverytextView3"
+                />
+
+            <TextView
+                android:id="@+id/deliveryContact"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="9999454334"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/deliverytextView3"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <Button
+                android:id="@+id/finish_delivery_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/border_curved"
+                android:padding="4dp"
+                android:text="Finish Delivery"
+                android:textColor="@color/colorWhite"
+                android:layout_below="@id/deliveryContact"
+                />
+
+
+            <Button
+                android:id="@+id/cancel_delivery_btn"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_curved"
+                android:padding="4dp"
+                android:text="Cancel"
+                android:textColor="@color/colorWhite"
+                android:layout_below="@id/deliveryContact"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
         <android.support.v4.widget.NestedScrollView
             android:id="@+id/bottom_sheet"
             android:layout_width="match_parent"
@@ -35,93 +236,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
-                    android:text="Details"
+                    android:text="Order Details"
                     android:textStyle="bold"
                     app:layout_constraintTop_toBottomOf="@id/div2"
                     android:layout_marginTop="4dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
 
-
-                <TextView
-                    android:id="@+id/textView2"
-                    style="@style/Base.TextAppearance.AppCompat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginStart="8dp"
-                    android:text="Distance to pickup point: "
-                    android:textColor="@color/colorPrimaryDark"
-                    app:layout_constraintBottom_toBottomOf="@+id/distance_value"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/distance_value" />
-
-                <TextView
-                    android:id="@+id/distance_value"
-                    style="@style/Base.TextAppearance.AppCompat.Large"
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:text="22km"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/details_label" />
-
-
-                <TextView
-                    android:id="@+id/textView3"
-                    style="@style/Base.TextAppearance.AppCompat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginStart="8dp"
-                    android:text="Estimated time: "
-                    android:textColor="@color/colorPrimaryDark"
-                    app:layout_constraintBottom_toBottomOf="@+id/estimated_time_value"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/estimated_time_value" />
-
-                <TextView
-                    android:id="@+id/estimated_time_value"
-                    style="@style/Base.TextAppearance.AppCompat.Large"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:text="9 hrs"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorPrimaryDark"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/distance_value" />
-
-
-                <Button
-                    android:id="@+id/finish_delivery_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginStart="8dp"
-                    android:background="@drawable/border_curved"
-                    android:padding="4dp"
-                    android:text="Finish Delivery"
-                    android:textColor="@color/colorWhite"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/estimated_time_value" />
-
-
-                <Button
-                    android:id="@+id/cancel_delivery_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:background="@drawable/border_curved"
-                    android:padding="4dp"
-                    android:text="Cancel"
-                    android:textColor="@color/colorWhite"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/estimated_time_value" />
             </android.support.constraint.ConstraintLayout>
 
 

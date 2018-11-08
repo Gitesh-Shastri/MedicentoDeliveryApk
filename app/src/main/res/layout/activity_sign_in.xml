@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/relative"
     android:background="@color/colorBackground"
     tools:context=".SignInActivity">
 
@@ -12,34 +13,43 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:srcCompat="@drawable/mdlf"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_centerHorizontal="true"
         />
 
-    <EditText
-        android:id="@+id/email_edit_tv"
-        style="@style/Base.TextAppearance.AppCompat.Large"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle=""
-        android:hint="Enter email address"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/medicento_logo" />
+        android:id="@+id/useremailL"
+        android:layout_below="@id/medicento_logo"
+        android:layout_marginRight="20dp"
+        app:errorEnabled="true"
+        android:layout_marginLeft="20dp" >
 
-    <EditText
-        android:id="@+id/password_edit_tv"
-        style="@style/Base.TextAppearance.AppCompat.Large"
+        <android.support.design.widget.TextInputEditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter password"
-        android:inputType="textPassword"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_edit_tv" />
+        android:layout_below="@id/useremailL"
+        android:id="@+id/userpasswordL"
+        android:layout_marginRight="20dp"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        android:layout_marginLeft="20dp" >
+
+        <android.support.design.widget.TextInputEditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            />
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/sign_in_btn"
@@ -50,17 +60,15 @@
         android:padding="10dp"
         android:text="Log In"
         android:textColor="#FFFFFF"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_edit_tv" />
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/userpasswordL"
+        />
 
     <ProgressBar
         android:id="@+id/sign_in_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
-</android.support.constraint.ConstraintLayout>
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

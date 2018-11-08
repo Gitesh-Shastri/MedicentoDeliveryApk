@@ -45,6 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="999"
+            android:id="@+id/collected"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
     </LinearLayout>
@@ -84,6 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="999"
+            android:id="@+id/points"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
     </LinearLayout>
@@ -125,6 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="999"
+            android:id="@+id/completed"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
     </LinearLayout>
@@ -166,6 +169,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="999"
+            android:id="@+id/pending"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold" />
     </LinearLayout>

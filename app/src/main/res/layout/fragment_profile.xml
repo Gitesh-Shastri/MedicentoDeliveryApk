@@ -153,11 +153,13 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="Date of Birth: "
+            android:visibility="gone"
             android:textColor="@color/colorAccent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email_value" />
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/dob_value"
             style="@style/Base.TextAppearance.AppCompat.Large"
             android:layout_width="wrap_content"
